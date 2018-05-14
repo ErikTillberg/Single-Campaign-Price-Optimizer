@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.optimize import minimize
 
-from app import *
+from Applications import *
 from Bidders import *
 
 def main():
@@ -16,7 +16,7 @@ def main():
 
     opt_bidder = OptimizedBidder(apps, IMPRESSIONS_WANTED) #0
     rand_bidder = RandBidder(IMPRESSIONS_WANTED) #1
-    fixed_bidder = FixedBidder(app.MEAN_BANNER, IMPRESSIONS_WANTED) #2
+    fixed_bidder = FixedBidder(Applications.MEAN_BANNER, IMPRESSIONS_WANTED) #2
 
     # How many auctions to conduct?
     auction_count = 0
