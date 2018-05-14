@@ -1,5 +1,5 @@
 import numpy as np
-import app
+import Applications
 from scipy.optimize import minimize
 
 class RandBidder():
@@ -40,7 +40,7 @@ class OptimizedBidder:
             imps = []
 
             for k in range(APP_COUNT):
-                imp = np.interp(x[k], app.bins, apps[k].imp_curve)
+                imp = np.interp(x[k], Applications.bins, apps[k].imp_curve)
                 imps.append(imp)
 
             return sum(imps)

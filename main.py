@@ -2,7 +2,7 @@ import numpy as np
 from scipy.optimize import minimize
 
 from Applications import *
-from Bidders import *
+from Bidder import *
 
 def main():
 
